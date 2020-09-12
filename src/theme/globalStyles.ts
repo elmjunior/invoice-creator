@@ -8,10 +8,17 @@ const GlobalStyle = createGlobalStyle`
     color: ${(props) => props.theme.colors.white};
     font-family: Open-Sans, Helvetica, Sans-Serif;
   }
-  div {
-    display: flex;
-    flex-direction: column
+  a {
+    color: ${(props) => props.theme.colors.yellow};
+    
+    font-weight: bold
   }
+  a:hover {
+    color: ${(props) => props.theme.colors.primary};
+    text-decoration: none;
+    
+  }
+ 
 `;
 
 export default GlobalStyle;

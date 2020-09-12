@@ -1,17 +1,20 @@
 import HomeScreen from './Home';
-
-import Dashboard from './Dashboard';
+import Settings from './Settings';
+import CreateInvoice from './CreateInvoice';
 
 export default [
   {
     component: HomeScreen,
-    exact: true,
     path: '/',
-  },
-
-  {
-    component: Dashboard,
-    name: 'Dashboard',
-    path: '/dashboard',
+    routes: [
+      {
+        component: Settings,
+        path: '/settings',
+      },
+      {
+        component: CreateInvoice,
+        path: '/create-invoice',
+      },
+    ],
   },
 ];
