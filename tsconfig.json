@@ -8,7 +8,12 @@
     "esModuleInterop": true,
     "forceConsistentCasingInFileNames": true,
     "jsx": "react",
-    "lib": ["es6", "es2015", "es2017", "dom"],
+    "lib": [
+      "es6",
+      "es2015",
+      "es2017",
+      "dom"
+    ],
     "module": "esnext",
     "moduleResolution": "Node",
     "noImplicitAny": true,
@@ -21,7 +26,14 @@
     "pretty": true,
     "suppressImplicitAnyIndexErrors": true,
     "target": "es2016",
-    "types": ["react", "jest"]
+    "types": [
+      "react",
+      "jest"
+    ],
+    "skipLibCheck": true,
+    "resolveJsonModule": true,
+    "isolatedModules": true,
+    "noEmit": true
   },
   "exclude": [
     "node_modules",
@@ -34,5 +46,13 @@
     "ecosystem.config.js",
     "src/**/__tests__/*.test.tsx"
   ],
-  "types": ["typePatches", "node", "webpack-env", "jest"]
+  "types": [
+    "typePatches",
+    "node",
+    "webpack-env",
+    "jest"
+  ],
+  "include": [
+    "src"
+  ]
 }
